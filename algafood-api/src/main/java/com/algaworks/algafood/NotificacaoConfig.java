@@ -4,11 +4,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.algaworks.algafood.di.notificacao.NotificadorEmail;
-import com.algaworks.algafood.service.AtivacaoClienteService;
 
 @Configuration
-public class AlgaConfig {
-	/*	
+public class NotificacaoConfig {
+	
 	@Bean
 	public NotificadorEmail notificadorEmail() {
 	    NotificadorEmail notificador = new NotificadorEmail("smtp.algamail.com.br");
@@ -16,9 +15,4 @@ public class AlgaConfig {
 		
 		return notificador;
 	}
-	
-	@Bean
-	public AtivacaoClienteService ativacaoClienteService() {
-		return new AtivacaoClienteService(notificadorEmail());
-	}*/
 }
