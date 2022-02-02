@@ -1,5 +1,0 @@
-package com.algaworks.di.modelo.notificacao;
-
-public class NotificadorEmail {
-
-}
