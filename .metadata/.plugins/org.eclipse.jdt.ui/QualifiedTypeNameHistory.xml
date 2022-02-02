@@ -52,4 +52,5 @@
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
     <fullyQualifiedTypeName name="com.algaworks.di.modelo.notificacao.Notificador"/>
     <fullyQualifiedTypeName name="com.algaworks.di.modelo.notificacao.NotificadorEmail"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 </qualifiedTypeNameHistroy>
