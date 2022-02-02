@@ -1,0 +1,15 @@
+package com.algaworks.di.modelo.service;
+
+import com.algaworks.di.modelo.Cliente;
+
+public class AtivacaoClienteService {
+
+	public void ativar(Cliente cliente) {
+		cliente.ativar();
+		
+		
+	}
+	
+	
+	
+}
