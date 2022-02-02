@@ -6366,3 +6366,66 @@ Binding(ALT+SHIFT+R,
 
 !ENTRY org.eclipse.ui 2 2 2022-02-02 12:46:56.739
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:34.636
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.USaSiPhB
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:34.636
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.USaSiPhB
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:34.637
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:34.637
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.USaSiPhB => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:40.948
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:40.948
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7e5d8ba4[org.springframework.tooling.boot.ls:1.29.0.202112031705(id=1144)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:40.948
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:42.364
+!MESSAGE Boot LS startup time from start to initialized: 1415ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:42.423
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.rwrEFfovisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:42.424
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:42.424
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:42.424
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:42.424
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.rwrEFfov => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:42.424
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:42.425
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:42.425
+!MESSAGE buffering callback sts4.classpath.rwrEFfov exemplo-di false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:42.425
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:42.427
+!MESSAGE classpath=64 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:42.427
+!MESSAGE buffering callback sts4.classpath.rwrEFfov algafood-api false 64
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:42.427
+!MESSAGE executing callback sts4.classpath.rwrEFfov 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-02 12:58:42.691
+!MESSAGE executing callback sts4.classpath.rwrEFfov SUCCESS [done]
