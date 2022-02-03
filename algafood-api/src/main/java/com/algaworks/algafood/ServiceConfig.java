@@ -13,6 +13,11 @@ public class ServiceConfig {
 	public AtivacaoClienteService ativacaoClienteService(Notificador notificador) {
 		return new AtivacaoClienteService(notificador);
 	}*/
+	
+	@Bean(initMethod = "init", destroyMethod = "destroy")
+	public AtivacaoClienteService ativacaoClienteService() {
+		return new AtivacaoClienteService();
+	}
 
 }
 
