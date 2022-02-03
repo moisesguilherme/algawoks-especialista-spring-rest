@@ -14,8 +14,8 @@ import com.algaworks.algafood.service.ClienteExcluidoEvent;
 @Component
 public class NotificacaoService {
 	
-	@TipoDoNotificador(NivelUrgencia.SEM_URGENCIA)
 	@Autowired
+	@TipoDoNotificador(NivelUrgencia.SEM_URGENCIA)
 	private Notificador notificador;	
 	
 	@EventListener
