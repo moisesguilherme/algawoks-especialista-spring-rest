@@ -27,4 +27,13 @@ public class MeuPrimeiroController {
 		ativacaoClienteService.ativar(joao);
 		return "Hello!";
 	}
+	
+	
+	@GetMapping("/excluir")
+	@ResponseBody
+	public String excluir() {
+		Cliente maria = new Cliente("Maria", "maria@xyz.com", "349999999888");
+		ativacaoClienteService.excluir(maria);
+		return "Excluido!";
+	}
 }
