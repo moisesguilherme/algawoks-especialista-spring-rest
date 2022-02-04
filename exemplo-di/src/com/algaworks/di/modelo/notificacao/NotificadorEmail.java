@@ -9,5 +9,4 @@ public class NotificadorEmail implements Notificador  {
 		System.out.printf("Notificando %s através do e-mail %s: %S\n", 
 				cliente.getNome(), cliente.getEmail(), mensagem);
 	}
-	
 }
