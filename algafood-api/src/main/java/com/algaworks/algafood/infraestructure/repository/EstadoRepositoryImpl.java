@@ -20,7 +20,6 @@ public class EstadoRepositoryImpl implements EstadoRepository {
 	
 	@Override
 	public List<Estado> todos(){
-		System.out.println(">>> entrou");
 		return manager.createQuery("from Estado", Estado.class)
 				.getResultList();
 	}
