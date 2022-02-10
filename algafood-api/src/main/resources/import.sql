@@ -12,6 +12,7 @@ insert into permissao (nome, descricao) values ('Admin','Administração');
 
 insert into estado (nome) values ('Minas Gerais');
 insert into estado (nome) values ('São Paulo');
+insert into estado (nome) values ('Ceará');
 
 insert into cidade (nome, estado_id) values ('Uberlândia', 1); 
 insert into cidade (nome, estado_id) values ('São Paulo', 2);
