@@ -6,12 +6,13 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.algaworks.algafood.domain.model.Cidade;
 import com.algaworks.algafood.domain.repository.CidadeRepository;
 
-@Component
+@Repository
 public class CidadeRepositoryImpl implements CidadeRepository {
 
 	
@@ -37,8 +38,8 @@ public class CidadeRepositoryImpl implements CidadeRepository {
 	
 	@Transactional
 	@Override
-	public void remover(Cidade cidade) {
-		cidade = buscar(cidade.getId());
+	public void remover(Long cidadeId) {
+		Cidade cidade = buscar(cidadeId);
 		manager.remove(cidade);
 	}
 

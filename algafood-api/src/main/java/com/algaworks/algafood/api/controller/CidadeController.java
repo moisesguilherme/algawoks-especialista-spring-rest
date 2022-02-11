@@ -88,7 +88,7 @@ public class CidadeController {
 		
 			Cidade cidade = cidadeRepository.buscar(cidadeId);
 			if(cidade != null) {
-				cadastroCidade.excluir(cidade);
+				cadastroCidade.excluir(cidadeId);
 				return ResponseEntity.noContent().build();	
 			}
 			
