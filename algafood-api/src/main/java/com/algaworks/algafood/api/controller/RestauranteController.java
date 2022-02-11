@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.algaworks.algafood.domain.exception.EntidadeNãoEncotradaException;
+import com.algaworks.algafood.domain.exception.EntidadeNaoEncotradaException;
 import com.algaworks.algafood.domain.model.Restaurante;
 import com.algaworks.algafood.domain.repository.RestauranteRepository;
 import com.algaworks.algafood.domain.service.CadastroRestauranteService;
@@ -61,7 +61,7 @@ public class RestauranteController {
 			restaurante = cadastroRestaurante.salvar(restaurante);
 			return ResponseEntity.status(HttpStatus.CREATED)
 					.body(restaurante);
-		}catch(EntidadeNãoEncotradaException e) {
+		}catch(EntidadeNaoEncotradaException e) {
 			return ResponseEntity.badRequest()
 					.body(e.getMessage());
 		}		
@@ -80,7 +80,7 @@ public class RestauranteController {
 				return ResponseEntity.ok(restauranteAtual);
 			}
 			return ResponseEntity.notFound().build();
-		}catch(EntidadeNãoEncotradaException e) {
+		}catch(EntidadeNaoEncotradaException e) {
 			return ResponseEntity.badRequest()
 					.body(e.getMessage());
 		}

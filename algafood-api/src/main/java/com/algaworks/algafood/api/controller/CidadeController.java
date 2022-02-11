@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.algaworks.algafood.domain.exception.EntidadeNãoEncotradaException;
+import com.algaworks.algafood.domain.exception.EntidadeNaoEncotradaException;
 import com.algaworks.algafood.domain.model.Cidade;
 import com.algaworks.algafood.domain.model.Cidade;
 import com.algaworks.algafood.domain.repository.CidadeRepository;
@@ -58,7 +58,7 @@ public class CidadeController {
 			cidade = cadastroCidade.salvar(cidade);
 			return ResponseEntity.status(HttpStatus.CREATED)
 					.body(cidade);
-		}catch(EntidadeNãoEncotradaException e) {
+		}catch(EntidadeNaoEncotradaException e) {
 			return ResponseEntity.badRequest()
 					.body(e.getMessage());
 		}		
@@ -76,7 +76,7 @@ public class CidadeController {
 				return ResponseEntity.ok(cidadeAtual);
 			}
 			return ResponseEntity.notFound().build();
-		}catch(EntidadeNãoEncotradaException e) {
+		}catch(EntidadeNaoEncotradaException e) {
 			return ResponseEntity.badRequest()
 					.body(e.getMessage());
 		}

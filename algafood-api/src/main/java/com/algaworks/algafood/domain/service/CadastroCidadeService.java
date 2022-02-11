@@ -6,7 +6,7 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 import com.algaworks.algafood.domain.exception.EntidadeEmUsoException;
-import com.algaworks.algafood.domain.exception.EntidadeNãoEncotradaException;
+import com.algaworks.algafood.domain.exception.EntidadeNaoEncotradaException;
 import com.algaworks.algafood.domain.model.Cidade;
 import com.algaworks.algafood.domain.model.Estado;
 import com.algaworks.algafood.domain.repository.CidadeRepository;
@@ -26,7 +26,7 @@ public class CadastroCidadeService {
 		Estado estado =  estadoRepository.buscar(estadoId);
 		
 		if(estado == null) {
-			throw new EntidadeNãoEncotradaException(String.format("Não existe cadastro de cidade com código %d", estadoId));
+			throw new EntidadeNaoEncotradaException(String.format("Não existe cadastro de cidade com código %d", estadoId));
 		}
 		
 		cidade.setEstado(estado);
@@ -38,7 +38,7 @@ public class CadastroCidadeService {
 		try {
 			cidadeRepository.remover(cidadeId);
 		}catch(EmptyResultDataAccessException e) {
-			throw new EntidadeNãoEncotradaException(
+			throw new EntidadeNaoEncotradaException(
 					String.format("Não existe um cadastro de cidade com código %d", cidadeId));
 		}catch(DataIntegrityViolationException e) {
 			throw new EntidadeEmUsoException(
