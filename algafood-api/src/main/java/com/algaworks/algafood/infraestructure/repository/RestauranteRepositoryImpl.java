@@ -9,7 +9,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.algaworks.algafood.domain.model.Restaurante;
-import com.algaworks.algafood.domain.model.Restaurante;
 import com.algaworks.algafood.domain.repository.RestauranteRepository;
 
 @Component
@@ -20,27 +19,27 @@ public class RestauranteRepositoryImpl implements RestauranteRepository {
 	private EntityManager manager;
 	
 	@Override
-	public List<Restaurante> todos(){
+	public List<Restaurante> listar(){
 		return manager.createQuery("from Restaurante", Restaurante.class)
 				.getResultList();
 	}
 	
 	@Override
-	public Restaurante porId(Long id) {
+	public Restaurante buscar(Long id) {
 		return manager.find(Restaurante.class, id);
 	}
 	
 	@Transactional
 	@Override
-	public Restaurante adicionar(Restaurante Restaurante) {
+	public Restaurante salvar(Restaurante Restaurante) {
 		return manager.merge(Restaurante);
 	}
 	
 	@Transactional
 	@Override
 	public void remover(Restaurante Restaurante) {
-		Restaurante = porId(Restaurante.getId());
+		Restaurante = buscar(Restaurante.getId());
 		manager.remove(Restaurante);
 	}
-
+	
 }

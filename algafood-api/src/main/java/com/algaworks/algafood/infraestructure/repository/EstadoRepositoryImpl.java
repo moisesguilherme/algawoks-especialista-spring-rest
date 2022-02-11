@@ -19,26 +19,26 @@ public class EstadoRepositoryImpl implements EstadoRepository {
 	private EntityManager manager;
 	
 	@Override
-	public List<Estado> todos(){
+	public List<Estado> listar(){
 		return manager.createQuery("from Estado", Estado.class)
 				.getResultList();
 	}
 	
 	@Override
-	public Estado porId(Long id) {
+	public Estado buscar(Long id) {
 		return manager.find(Estado.class, id);
 	}
 	
 	@Transactional
 	@Override
-	public Estado adicionar(Estado estado) {
+	public Estado salvar(Estado estado) {
 		return manager.merge(estado);
 	}
 	
 	@Transactional
 	@Override
 	public void remover(Estado estado) {
-		estado = porId(estado.getId());
+		estado = buscar(estado.getId());
 		manager.remove(estado);
 	}
 
