@@ -1,10 +1,10 @@
 package com.algaworks.algafood.domain.exception;
 
-public class EntidadeNãoEncotradaException extends RuntimeException{
+public class EntidadeNaoEncotradaException extends RuntimeException{
 
 	private static final long serialVersionUID = 1L;
 
-	public EntidadeNãoEncotradaException(String message) {
+	public EntidadeNaoEncotradaException(String message) {
 		super(message);
 	}
 	
