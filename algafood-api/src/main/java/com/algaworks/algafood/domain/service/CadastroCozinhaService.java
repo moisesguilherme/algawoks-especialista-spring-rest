@@ -26,7 +26,6 @@ public class CadastroCozinhaService {
 		try {
 			cozinhaRepository.deleteById(cozinhaId);
 		}catch(EmptyResultDataAccessException e) {
-			System.out.println(">>> chega aqui");
 			throw new EntidadeNaoEncotradaException(
 					String.format("Não existe um cadastro de cozinha com código %d", cozinhaId));
 		}catch(DataIntegrityViolationException e) {
