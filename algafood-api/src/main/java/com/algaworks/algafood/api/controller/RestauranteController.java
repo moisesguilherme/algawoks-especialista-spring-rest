@@ -31,7 +31,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @RestController
 @RequestMapping(value = "/restaurantes") 
 public class RestauranteController {
-	
+
 	
 	@Autowired
 	private RestauranteRepository restauranteRepository;
@@ -139,4 +139,5 @@ public class RestauranteController {
 					.body(e.getMessage());
 		}		
 	}
+
 }
