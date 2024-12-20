@@ -31,6 +31,9 @@ public class Cozinha {
 	//@JsonProperty("titulo")
 	@Column(nullable = false)
 	private String nome;
+
+	@Column(name = "observacao")
+	private String descricao;
 	
 	//Relacionamento bidirecional
 	@JsonIgnore
